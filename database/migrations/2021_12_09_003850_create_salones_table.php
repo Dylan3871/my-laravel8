@@ -15,6 +15,8 @@ class CreateSalonesTable extends Migration
     {
         Schema::create('salones', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_salon');
+            $table->string('salon');
             $table->timestamps();
         });
     }

@@ -15,6 +15,9 @@ class CreateMateriasTable extends Migration
     {
         Schema::create('materias', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_materia');
+            $table->string('materia');
+            
             $table->timestamps();
         });
     }
