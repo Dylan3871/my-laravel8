@@ -16,6 +16,8 @@ class SalonesController extends Controller
     public function index()
     {
         //
+        $datos['salones']=salones::paginate(5);
+        return view('salones.index',$datos);
       
     }
 
