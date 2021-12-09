@@ -40,6 +40,8 @@ class EstudiantesController extends Controller
     public function store(Request $request)
     {
         //
+        $datosEstudiante = request()->all();
+        return response()->json($datosEstudiante);
     }
 
     /**

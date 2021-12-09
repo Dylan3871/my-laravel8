@@ -39,6 +39,8 @@ class MateriaController extends Controller
     public function store(Request $request)
     {
         //
+        $datosMaterias = request()->all();
+        return response()->json($datosMaterias);
     }
 
     /**

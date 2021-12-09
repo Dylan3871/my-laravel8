@@ -39,6 +39,8 @@ class SalonesController extends Controller
     public function store(Request $request)
     {
         //
+        $datosSalones = request()->all();
+        return response()->json($datosSalones);
         
     }
 
@@ -51,6 +53,7 @@ class SalonesController extends Controller
     public function show(salones $salones)
     {
         //
+        
     }
 
     /**
@@ -62,6 +65,7 @@ class SalonesController extends Controller
     public function edit(salones $salones)
     {
         //
+       
     }
 
     /**

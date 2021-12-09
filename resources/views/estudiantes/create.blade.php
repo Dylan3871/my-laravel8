@@ -1,6 +1,8 @@
 formularo de creacion de alumno
 
-<form action="" method="post" enctype="multipart/from-data" >
+<form action="{{url('/estudiantes')}}" method="post" enctype="multipart/from-data" >
+@csrf 
+
 <br>
 <label for="Alumno_id">Id Alumno</label>
 <input type="text" name="Alumno_id" id="Alumno_id">
