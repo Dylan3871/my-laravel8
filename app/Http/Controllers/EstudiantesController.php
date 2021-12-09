@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\estudiantes;
 use Illuminate\Http\Request;
 
+
 class EstudiantesController extends Controller
 {
     /**
@@ -15,6 +16,7 @@ class EstudiantesController extends Controller
     public function index()
     {
         //
+        
     }
 
     /**
@@ -25,6 +27,7 @@ class EstudiantesController extends Controller
     public function create()
     {
         //
+        return view('estudiantes.create');
     }
 
     /**

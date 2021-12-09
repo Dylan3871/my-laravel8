@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\materia;
 use Illuminate\Http\Request;
 
+
 class MateriaController extends Controller
 {
     /**
@@ -15,6 +16,7 @@ class MateriaController extends Controller
     public function index()
     {
         //
+        
     }
 
     /**
@@ -25,6 +27,7 @@ class MateriaController extends Controller
     public function create()
     {
         //
+        return view('materias.create');
     }
 
     /**

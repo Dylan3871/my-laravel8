@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\salones;
 use Illuminate\Http\Request;
 
+
 class SalonesController extends Controller
 {
     /**
@@ -15,6 +16,7 @@ class SalonesController extends Controller
     public function index()
     {
         //
+      
     }
 
     /**
@@ -25,6 +27,7 @@ class SalonesController extends Controller
     public function create()
     {
         //
+        return view('salones.create');
     }
 
     /**
@@ -36,6 +39,7 @@ class SalonesController extends Controller
     public function store(Request $request)
     {
         //
+        
     }
 
     /**
