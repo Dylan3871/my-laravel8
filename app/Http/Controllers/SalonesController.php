@@ -39,7 +39,8 @@ class SalonesController extends Controller
     public function store(Request $request)
     {
         //
-        $datosSalones = request()->all();
+        $datosSalones = request()->except('_token');
+        Salones::insert($datosSalones);
         return response()->json($datosSalones);
         
     }

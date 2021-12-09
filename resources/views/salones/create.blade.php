@@ -8,5 +8,5 @@ desde la creacuin de salones
 <label for="salon">Salon</label>
 <input type="text" name="salon" id="salon">
 <br>
-<input type="submit" name="Enviar" id="Enviar">
+<input type="submit"  value="Guardar Datos">
 <br>

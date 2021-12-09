@@ -39,8 +39,9 @@ class MateriaController extends Controller
     public function store(Request $request)
     {
         //
-        $datosMaterias = request()->all();
-        return response()->json($datosMaterias);
+        $datosMateria = request()->except('_token');
+        Materia::insert($datosMateria);
+        return response()->json($datosMateria);
     }
 
     /**

@@ -20,7 +20,7 @@ class CreateEstudiantesTable extends Migration
             $table->string('apellidopaterno');
             $table->string('apellidomaterno');
             $table->string('matricula');
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->unsignedBigInteger('id_salon');
 
 

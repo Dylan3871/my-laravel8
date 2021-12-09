@@ -8,5 +8,5 @@ desde create de materias
 <label for="materia">Materia</label>
 <input type="text" name="materia" id="materia">
 <br>
-<input type="submit" name="Enviar" id="Enviar">
+<input type="submit"  value="Guardar Datos">
 <br>

@@ -4,28 +4,28 @@ formularo de creacion de alumno
 @csrf 
 
 <br>
-<label for="Alumno_id">Id Alumno</label>
-<input type="text" name="Alumno_id" id="Alumno_id">
+<label for="alumno_id">Id Alumno</label>
+<input type="text" name="alumno_id" id="alumno_id">
 <br>
-<label for="Nombre">Nombre</label>
-<input type="text" name="Nombre" id="Nombre">
+<label for="nombre">Nombre</label>
+<input type="text" name="nombre" id="nombre">
 <br>
-<label for="ApellidoPaterno">Apellido Paterno</label>
-<input type="text" name="ApellidoPaterno" id="ApellidoPaterno">
+<label for="apellidoaaterno">Apellido Paterno</label>
+<input type="text" name="apellidopaterno" id="apellidopaterno">
 <br>
-<label for="ApellidoMaterno">Apellido Materno</label>
-<input type="text" name="ApellidoMaterno" id="ApellidoMaterno">
+<label for="apellidoMaterno">Apellido Materno</label>
+<input type="text" name="apellidoMaterno" id="apellidoMaterno">
 <br>
-<label for="Matricula">Matricula</label>
-<input type="text" name="Matricula"  id="Matricula">
+<label for="matricula">Matricula</label>
+<input type="text" name="matricula"  id="matricula">
 <br>
-<label for="Foto">Foto</label>
-<input type="file" name="Foto" id="Foto">
+<label for="foto">Foto</label>
+<input type="file" name="foto" id="foto">
 <br>
-<label for="Id_Salon">Id Salon</label>
-<input type="text" name="Id_salon" id="Id_salon">
+<label for="id_Salon">Id Salon</label>
+<input type="text" name="id_salon" id="id_salon">
 <br>
-<input type="submit" name="Enviar" id="Enviar">
+<input type="submit"  value="Guardar Datos">
 <br>
             
 

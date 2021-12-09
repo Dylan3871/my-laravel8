@@ -40,8 +40,10 @@ class EstudiantesController extends Controller
     public function store(Request $request)
     {
         //
-        $datosEstudiante = request()->all();
-        return response()->json($datosEstudiante);
+       // $datosEstudiante = request()->all();
+       $datosestudiantes = request()->except('_token');
+       Estudiantes::insert($datosestudiantes);
+        return response()->json($datosestudiantes);
     }
 
     /**
