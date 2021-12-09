@@ -16,6 +16,7 @@ class EstudiantesController extends Controller
     public function index()
     {
         //
+        return view('estudiantes.index');
         
     }
 

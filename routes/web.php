@@ -25,6 +25,7 @@ Route::get('/', function () {
 });
 Route::get('estudiantes/create',[EstudiantesController::class,'create']);*/
 
+//con esta funcion remplazamos por mas rutas y accedemos a todo
 Route::resource('estudiantes', EstudiantesController::class);
 
 
