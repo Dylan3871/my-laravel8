@@ -16,3 +16,24 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//tutas de estudiantes
+Route::get('/estudiantes', function () {
+    return view('estudiantes.index');
+});
+//rutas para menu principal
+Route::get('/views', function () {
+    return view('index');
+});
+
+//rutas para salones
+Route::get('/salones', function () {
+    return view('salones.index');
+});
+
+//rutas para materias
+Route::get('/materias', function () {
+    return view('materias.index');
+});
+
+
+
