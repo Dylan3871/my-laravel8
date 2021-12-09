@@ -89,8 +89,10 @@ class SalonesController extends Controller
      * @param  \App\Models\salones  $salones
      * @return \Illuminate\Http\Response
      */
-    public function destroy(salones $salones)
+    public function destroy($id)
     {
         //
+        Salones::destroy($id);
+        return redirect('salones');
     }
 }

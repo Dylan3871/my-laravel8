@@ -14,7 +14,14 @@
             <td>{{$salones->id}}</td>
             <td>{{$salones->salon}}</td>
   
-            <td>Editar | Borrar</td>
+            <td>Editar |
+         <form action="{{url('/salones/'.$salones->id)}}" method="post">
+        @csrf
+        {{method_field('DELETE')}}
+        <input type="submit" onclick="return confirm('¿Desea borrar?')"
+        value="Borrar">
+        </form>
+            </td>
         </tr>
         @endforeach
     </tbody>

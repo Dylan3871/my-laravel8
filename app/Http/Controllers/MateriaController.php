@@ -86,8 +86,10 @@ class MateriaController extends Controller
      * @param  \App\Models\materia  $materia
      * @return \Illuminate\Http\Response
      */
-    public function destroy(materia $materia)
+    public function destroy($id)
     {
         //
+        Materia::destroy($id);
+        return redirect('materias');
     }
 }

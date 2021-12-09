@@ -22,7 +22,14 @@ mostrar lista de estudiantes
             <td>{{$estudiantes->apellidomaterno}}</td>
             <td>{{$estudiantes->matricula}}</td>
             <td>{{$estudiantes->id_salon}}</td>
-            <td>Editar | Borrar</td>
+            <td>Editar 
+        <form action="{{url('/estudiantes/'.$estudiantes->id)}}" method="post">
+        @csrf
+        {{method_field('DELETE')}}
+        <input type="submit" onclick="return confirm('¿Desea borrar?')"
+        value="Borrar">
+        </form>
+    </td>
         </tr>
         @endforeach
     </tbody>
