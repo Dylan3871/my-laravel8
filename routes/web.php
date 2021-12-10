@@ -55,3 +55,7 @@ Route::resource('salones', SalonesController::class);
 Route::get('materias/create',[MateriaController::class,'create']);*/
 Route::resource('materias', MateriaController::class);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
