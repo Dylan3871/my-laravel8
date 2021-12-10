@@ -105,6 +105,6 @@ class EstudiantesController extends Controller
     {
         //
         Estudiantes::destroy($id);
-        return redirect('estudiantes');
+        return redirect('estudiantes')->with('mensaje','Esttudiante borrado');
     }
 }
