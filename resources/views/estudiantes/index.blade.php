@@ -1,9 +1,16 @@
-mostrar lista de estudiantes 
+mostrar lista de estudiantes
+
+@if(Session::has('mensaje'))
+{{ Session::get('mensaje')}}
+@endif
+
+<a href="{{ url('estudiantes/create') }}"> Registrar nuevo estudiante </a>
+
 <table class="table table-light">
     <thead class="thead-light">
         <tr>
             <th>#</th>
-            
+
             <th>Nombre</th>
             <th>Apellido Paterno</th>
             <th>Apellido Materno</th>
@@ -24,9 +31,9 @@ mostrar lista de estudiantes
             <td>{{$estudiantes->id_salon}}</td>
             <td>
                 <a href="{{ url('/estudiantes/'.$estudiantes->id.'/edit')}}">
-                
-            
-            Editar 
+
+
+            Editar
          </a>
 
 

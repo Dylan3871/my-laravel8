@@ -18,7 +18,7 @@ class EstudiantesController extends Controller
         //
         $datos['estudiantes']=Estudiantes::paginate(5);
         return view('estudiantes.index',$datos);
-        
+
     }
 
     /**
@@ -45,10 +45,13 @@ class EstudiantesController extends Controller
        $datosestudiantes = request()->except('_token');
 
        if($request->hasFile('Foto')){
+
         $datosEstudiantes['Foto']=$request->file('Foto')->store('uploads','public');
            }
        Estudiantes::insert($datosestudiantes);
-        return response()->json($datosestudiantes);
+
+        //return response()->json($datosestudiantes);
+        return  redirect('estudiantes')->with('mensaje','Estudiante agreado con exito');
     }
 
     /**
