@@ -65,10 +65,11 @@ class SalonesController extends Controller
      * @param  \App\Models\salones  $salones
      * @return \Illuminate\Http\Response
      */
-    public function edit(salones $salones)
+    public function edit($id)
     {
         //
-        return view ('salones.edit');
+        $salones=Salones::findOrFail($id);
+        return view ('salones.edit',  compact('salones'));
        
     }
 

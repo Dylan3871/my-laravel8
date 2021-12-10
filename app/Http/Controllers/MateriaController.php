@@ -63,10 +63,11 @@ class MateriaController extends Controller
      * @param  \App\Models\materia  $materia
      * @return \Illuminate\Http\Response
      */
-    public function edit(materia $materia)
+    public function edit($id)
     {
         //
-        return view ('materias.edit');
+        $materia=Materia::findOrFail($id);
+        return view ('materias.edit', compact('materia'));
     }
 
     /**

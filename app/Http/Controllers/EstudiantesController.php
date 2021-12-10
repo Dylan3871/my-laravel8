@@ -68,10 +68,11 @@ class EstudiantesController extends Controller
      * @param  \App\Models\estudiantes  $estudiantes
      * @return \Illuminate\Http\Response
      */
-    public function edit(estudiantes $estudiantes)
+    public function edit($id)
     {
         //
-        return view ('estudiantes.edit');
+        $estudiantes=Estudiantes::findOrFail($id);
+        return view ('estudiantes.edit', compact('estudiantes'));
     }
 
     /**
