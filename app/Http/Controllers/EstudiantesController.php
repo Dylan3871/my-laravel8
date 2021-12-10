@@ -82,9 +82,14 @@ class EstudiantesController extends Controller
      * @param  \App\Models\estudiantes  $estudiantes
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, estudiantes $estudiantes)
+    public function update(Request $request, $id)
     {
         //
+        $datosEstudiantes = request()->except(['_token','_method']);
+        Estudiantes::where('id','=',$id)->update($datosEstudiantes);
+        $estudiantes=Estudiantes::findOrFail($id);
+        return view ('estudiantes.edit', compact('estudiantes'));
+
     }
 
     /**
