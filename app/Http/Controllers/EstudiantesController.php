@@ -71,6 +71,7 @@ class EstudiantesController extends Controller
     public function edit(estudiantes $estudiantes)
     {
         //
+        return view ('estudiantes.edit');
     }
 
     /**

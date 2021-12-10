@@ -22,7 +22,17 @@ mostrar lista de estudiantes
             <td>{{$estudiantes->apellidomaterno}}</td>
             <td>{{$estudiantes->matricula}}</td>
             <td>{{$estudiantes->id_salon}}</td>
-            <td>Editar 
+            <td>
+                <a href="{{ url('/estudiantes/'.$estudiantes->id.'/edit')}}">
+                
+            
+            Editar 
+         </a>
+
+
+
+
+
         <form action="{{url('/estudiantes/'.$estudiantes->id)}}" method="post">
         @csrf
         {{method_field('DELETE')}}

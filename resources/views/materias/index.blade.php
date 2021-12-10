@@ -15,7 +15,14 @@ menu de materias
             <td>{{$materias->id}}</td>
             <td>{{$materias->materia}}</td>
   
-            <td>Editar | 
+            <td>
+            <a href="{{ url('/materias/'.$materias->id.'/edit')}}">
+                
+            
+                Editar 
+         </a>    
+            
+            | 
        <form action="{{url('/materias/'.$materias->id)}}" method="post">
         @csrf
         {{method_field('DELETE')}}

@@ -14,7 +14,13 @@
             <td>{{$salones->id}}</td>
             <td>{{$salones->salon}}</td>
   
-            <td>Editar |
+            <td>
+            <a href="{{ url('/salones/'.$salones->id.'/edit')}}">
+                
+                Editar 
+         </a> 
+                
+            |
          <form action="{{url('/salones/'.$salones->id)}}" method="post">
         @csrf
         {{method_field('DELETE')}}

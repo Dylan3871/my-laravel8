@@ -68,6 +68,7 @@ class SalonesController extends Controller
     public function edit(salones $salones)
     {
         //
+        return view ('salones.edit');
        
     }
 

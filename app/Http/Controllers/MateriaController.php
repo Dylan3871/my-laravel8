@@ -66,6 +66,7 @@ class MateriaController extends Controller
     public function edit(materia $materia)
     {
         //
+        return view ('materias.edit');
     }
 
     /**

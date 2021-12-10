@@ -1,1 +1,2 @@
-formulario de edicion de empleado
+
+@include('estudiantes.form');
